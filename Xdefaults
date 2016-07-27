@@ -1,0 +1,17 @@
+URxvt*foreground: white
+URxvt*background: black
+URxvt.internalBorder:   1
+#URxvt*font: xft:Inconsolata-10
+#URxvt*font: xft:Anonymous Pro-11
+URxvt*font: xft:Terminus-12
+#URxvt*font: xft:DejaVu Sans Mono-10
+URxvt.scrollBar: false
+URxvt.geometry: 116x36
+
+URxvt.depth: 32
+URxvt.background: [90]#000000
+
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal

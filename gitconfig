@@ -1,0 +1,24 @@
+[user]
+        name = John Toomey
+        email = john.toomey@intel.com
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+[core]
+	pager = less -F -X
+[alias]
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[diff]
+        tool = meld
+[difftool]
+        prompt = false
+[merge]
+        tool = meld
+[gui]
+	commitmsgwidth = 72
+[credentials]
+	helper = cache
+[include]
+	path = ~/.dotconfig_intel/gitconfig-intel
