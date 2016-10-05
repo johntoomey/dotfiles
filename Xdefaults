@@ -1,10 +1,10 @@
 URxvt*foreground: white
 URxvt*background: black
 URxvt.internalBorder:   1
-#URxvt*font: xft:Inconsolata-10
-#URxvt*font: xft:Anonymous Pro-11
-URxvt*font: xft:Terminus-12
-#URxvt*font: xft:DejaVu Sans Mono-10
+! URxvt*font: xft:Inconsolata-10
+! URxvt*font: xft:Anonymous Pro-11
+! URxvt*font: xft:Terminus-12
+Rxvt*font: xft:DejaVu Sans Mono-10
 URxvt.scrollBar: false
 URxvt.geometry: 116x36
 
