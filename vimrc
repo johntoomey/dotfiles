@@ -16,6 +16,7 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'klen/python-mode'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomasr/molokai'
+"Plugin 'lifepillar/vim-mucomplete'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -38,7 +39,7 @@ set backspace=2
 set updatetime=500
 set cursorline
 set showcmd
-match ErrorMsg '\%>80v.\+' "cc=80
+" match ErrorMsg '\%>80v.\+' "cc=80
 set mouse=a
 set clipboard=unnamed
 "setlocal spell spelllang=en_gb
