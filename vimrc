@@ -17,6 +17,14 @@ Plugin 'klen/python-mode'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomasr/molokai'
 "Plugin 'lifepillar/vim-mucomplete'
+"Plugin 'craigemery/vim-autotag'
+Plugin 'craigemery/vim-autotag'
+
+
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-endwise'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -43,6 +51,7 @@ set showcmd
 set mouse=a
 set clipboard=unnamed
 "setlocal spell spelllang=en_gb
+set tabstop=4
 
 "Fix for NERDTree
 let NERDTreeDirArrows=0
