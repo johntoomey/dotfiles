@@ -89,5 +89,3 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 setopt hist_ignore_all_dups
-
-source ~/.dotfiles_intel/zshrc_jtoomey

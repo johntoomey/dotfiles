@@ -1,14 +1,14 @@
 [user]
         name = John Toomey
-        email = john.toomey@intel.com
+        email = crosswired@gmail.com.com
 [color]
         branch = auto
         diff = auto
         interactive = auto
         status = auto
 [core]
-	pager = less -F -X
-	excludesfile = /home/jtoomey/.global_ignore
+		pager = less -F -X
+		excludesfile = /home/jtoomey/.global_ignore
 [alias]
         lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [diff]
@@ -18,8 +18,6 @@
 [merge]
         tool = meld
 [gui]
-	commitmsgwidth = 72
+		commitmsgwidth = 72
 [credentials]
-	helper = cache
-[include]
-	path = ~/.dotconfig_intel/gitconfig-intel
+		helper = cache
