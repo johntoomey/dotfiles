@@ -1,6 +1,6 @@
 [user]
         name = John Toomey
-        email = crosswired@gmail.com.com
+        email = crosswired@gmail.com
 [color]
         branch = auto
         diff = auto
@@ -9,8 +9,6 @@
 [core]
 		pager = less -F -X
 		excludesfile = /home/jtoomey/.global_ignore
-[alias]
-        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [diff]
         tool = meld
 [difftool]
