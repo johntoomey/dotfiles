@@ -1,15 +1,15 @@
 set nocompatible " be iMproved, required
 
 call plug#begin()
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'tomasr/molokai'
-Plug 'morhetz/gruvbox'
+"Plug 'tomasr/molokai'
+"Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 "Plug 'rhysd/vim-clang-format'
 Plug 'fatih/vim-go'
@@ -26,7 +26,7 @@ Plug 'python-mode/python-mode', { 'branch': 'develop' }
 "Plug 'vim-syntastic/syntastic'
 "Plug 'maksimr/vim-jsbeautify'
 Plug 'ryanoasis/vim-devicons'
-Plug 'universal-ctags/ctags'
+"Plug 'universal-ctags/ctags'
 "Plug 'docker/docker'
 Plug 'joshdick/onedark.vim'
 "Plug 'w0rp/ale'
@@ -34,13 +34,16 @@ Plug 'joshdick/onedark.vim'
 "Plug 'romainl/vim-cool'
 "Plug 'sheerun/vim-polyglot'
 "Plug 'ludovicchabant/vim-gutentags'
-"Plug 'mboughaba/i3config.vim'
+Plug 'mboughaba/i3config.vim'
 Plug 'kergoth/vim-bitbake'
+Plug 'ap/vim-css-color'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 filetype plugin indent on
 set background=dark
 "colorscheme molokai
+"set termguicolors
 colorscheme onedark
 
 set encoding=utf8
@@ -73,7 +76,7 @@ set showcmd
 set laststatus=2
 set updatetime=500
 set mouse=a
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 set fileformats=unix,dos,mac
 "setlocal spell spelllang=en_gb
 
@@ -107,7 +110,22 @@ noremap <C-h> <C-w>h
 "noremap <C-u> :bp<CR>
 "noremap <C-i> :bn<CR>
 
+" Copy/paste to/from clipboard
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+yg_
+nnoremap <leader>y "+y
+nnoremap <leader>yy "+yy
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 let g:go_version_warning = 0
+
+aug i3config_ft_detection
+  au!
+  au BufNewFile,BufRead ~/.config/sway/config set filetype=i3config
+aug end
